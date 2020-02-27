@@ -7,8 +7,9 @@ function Cloud() {
   } else {
     this.sprite = new PIXI.Sprite(PIXI.Loader.shared.resources["assets/textures/cloud2.png"].texture);
   }
-  this.sprite.width = 200 + 50*Math.random();
-  this.sprite.height = 100 + 50*Math.random();
+  let r = (window.innerWidth * window.innerHeight)*0.0003;
+  this.sprite.width = r + 100*Math.random();
+  this.sprite.height = r*0.7 + 100*Math.random();
   var rdmHeight = Math.random() * 0.4 * window.innerHeight;
   this.sprite.position.y = rdmHeight;
   this.sprite.position.x = -this.sprite.width;

@@ -1,6 +1,6 @@
 function skyScene() {
   this.clouds = [];
-  let maxClouds = 6;
+  let maxClouds = 5;
   let sky = new PIXI.Sprite(PIXI.Loader.shared.resources["assets/textures/sky.jpg"].texture);
   sky.height = window.innerHeight;
   sky.width = window.innerWidth;
