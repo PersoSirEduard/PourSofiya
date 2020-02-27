@@ -1,6 +1,6 @@
 function skyScene() {
   this.clouds = [];
-  let maxClouds = 4;
+  let maxClouds = 6;
   let sky = new PIXI.Sprite(PIXI.Loader.shared.resources["assets/textures/sky.jpg"].texture);
   sky.height = window.innerHeight;
   sky.width = window.innerWidth;
@@ -12,8 +12,8 @@ function skyScene() {
   app.stage.filters.push(new PIXI.filters.ReflectionFilter({
     mirror: true,
     boundary: 0.60,
-    amplitude: [6, 6],
-    waveLength: [12, 120]
+    amplitude: [8, 8],
+    waveLength: [20, 120]
   }));
 
   this.update = function() {
