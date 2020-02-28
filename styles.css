@@ -17,3 +17,25 @@ canvas {
     width: 100%;
     over﻿flow: hidden;
 }
+
+.console-container {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
