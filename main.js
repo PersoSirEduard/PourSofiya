@@ -38,7 +38,7 @@ function resize() { //Resize Event
   app.renderer.resize(window.innerWidth, window.innerHeight);
 }
 
-window.addEventListener('mousedown', onClickEvent);
+window.addEventListener('click', onClickEvent);
 
 function onClickEvent(e) {
   mouseX = e.clientX;
