@@ -1,6 +1,6 @@
 function fallingPackage() {
   this.xSpeed = 0;
-  this.ySpeed = 0.7;
+  this.ySpeed = 1;
   this.crateInWater = false;
   let r = (window.innerWidth * window.innerHeight)*0.0008;
   this.spriteCrate = new PIXI.Sprite(PIXI.Loader.shared.resources["assets/textures/package.png"].texture);
