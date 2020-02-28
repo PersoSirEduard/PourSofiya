@@ -82,18 +82,18 @@ var sentencesWaitTime = [
         }
       }
     }
-    if (getDistance(this.package.spriteCrate.position.x + this.package.spriteCrate.width/2, this.package.spriteCrate.position.y - this.package.spriteCrate.height/2, mouseX, mouseY) < this.package.spriteCrate.width && this.startAnim == false) {
+    if (getDistance(this.package.spriteCrate.position.x + this.package.spriteCrate.width/2, this.package.spriteCrate.position.y - this.package.spriteCrate.height/2, mouseX, mouseY) < this.package.spriteCrate.width && this.startAnim == false || this.package.crateInWater && this.startAnim == false) {
       mouseX = -10000;
       mouseY = -10000;
       this.startAnim = true;
-      PIXI.Loader.shared.resources["assets/sounds/music.mp3"].data.volume = 0.95;
-      PIXI.Loader.shared.resources["assets/sounds/music.mp3"].data.play(); //Play music
       app.stage.filters.push(new PIXI.filters.AdjustmentFilter({
         gamma: 0.65,
         saturation: 1.2,
         brightness: 0.25,
         contrast: 1.5
       }));
+      PIXI.Loader.shared.resources["assets/sounds/music.mp3"].data.volume = 0.95;
+      PIXI.Loader.shared.resources["assets/sounds/music.mp3"].data.play(); //Play music
       sky.tint = 0x151570;
       this.package.text.visible = false;
       this.writer = new typewriter(sentences, 90, sentencesWaitTime);
