@@ -83,8 +83,8 @@ var sentencesWaitTime = [
       }
     }
     if (getDistance(this.package.spriteCrate.position.x + this.package.spriteCrate.width/2, this.package.spriteCrate.position.y - this.package.spriteCrate.height/2, mouseX, mouseY) < this.package.spriteCrate.width && this.startAnim == false) {
-      mouseX = 0;
-      mouseY = 0;
+      mouseX = -10000;
+      mouseY = -10000;
       this.startAnim = true;
       PIXI.Loader.shared.resources["assets/sounds/music.mp3"].data.volume = 0.95;
       PIXI.Loader.shared.resources["assets/sounds/music.mp3"].data.play(); //Play music

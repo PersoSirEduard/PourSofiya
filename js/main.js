@@ -21,8 +21,8 @@ var sceneObj;
 var playingScene = false;
 var goToNextScene = false;
 
-let mouseX = 0;
-let mouseY = 0;
+let mouseX = -10000;
+let mouseY = -10000;
 
 const app = new PIXI.Application({ //New PIXI engine container
   width: window.innerWidth,
